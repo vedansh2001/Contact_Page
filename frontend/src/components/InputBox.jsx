@@ -1,8 +1,15 @@
-export function InputBox({label, placeholder, onChange}) {
-    return <div>
-      <div className="text-sm font-medium text-left py-2">
-        {label}
-      </div>
-      <input onChange={onChange} placeholder={placeholder} className="w-full px-2 py-1 border rounded border-slate-200" />
-    </div>
+export function InputBox({ placeholder, onChange, name }) {
+    return (
+        <div className="-mb-3">
+            <div>
+                <input 
+                    type="text" 
+                    placeholder={placeholder} 
+                    className="shadow border-black border w-10/12 pt-1 pr-2 pb-1 pl-2 rounded-sm bg-gray-300 "
+                    name={name} // Use the `name` prop here
+                    onChange={onChange}
+                />
+            </div>
+        </div>
+    );
 }

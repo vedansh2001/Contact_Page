@@ -1,5 +1,5 @@
 export function SubHeading({label}) {
-  return <div className="text-slate-500 text-md pt-1 px-4 pb-4">
-    {label}
-  </div>
+    return <div className="-mb-1">
+        <div className="flex justify-center"><div className=" w-10/12 pt-2 pr-2 pb-1 text-left font-semibold text-xl">{label}</div></div>
+    </div>
 }
