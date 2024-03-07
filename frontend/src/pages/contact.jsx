@@ -1,6 +1,6 @@
 import { useState } from "react"
-import InputBox from "../components/inputbox"
-import SubHeading from "../components/subheading"
+import { InputBox } from "../components/InputBox"
+import { SubHeading } from "../components/SubHeading"
 
 
 
